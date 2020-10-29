@@ -1,0 +1,33 @@
+/* background/ color text*/
+.bg_nav{
+  background: white;
+}
+
+.text_blue{
+  color: #041D4F;
+}
+
+
+/**********
+*  HEADER
+***********/
+/* navbar */
+.navbar-brand > img{
+  height: 20px;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: #041D4F;
+}
+.navbar-default .navbar-nav > li > a:hover{
+  color: #2285FD;
+}
+
+#site_header .btn{
+  border: 1px solid #2285FD;
+  color: #2285FD;
+}
+#site_header .btn:hover{
+  background-color: #2285FD;
+  color: white;
+}
