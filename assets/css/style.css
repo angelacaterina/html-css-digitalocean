@@ -1,13 +1,30 @@
+body{
+  padding-top: 50px;
+}
 /* background/ color text*/
 .bg_nav{
   background: white;
 }
-
+.bg_jumbotron{
+  background-color: #2285FD;
+}
 .text_blue{
   color: #041D4F;
 }
+.text_lightblue{
+  color: #2285FD;
+}
+.text_white{
+  color: white;
+}
 
-
+/* utility */
+.py_20{
+  padding: 20px 0;
+}
+.pr_70p{
+  padding-right: 70px;
+}
 /**********
 *  HEADER
 ***********/
@@ -23,11 +40,37 @@
   color: #2285FD;
 }
 
-#site_header .btn{
+#site_header nav .btn{
   border: 1px solid #2285FD;
   color: #2285FD;
 }
-#site_header .btn:hover{
+#site_header nav .btn:hover{
   background-color: #2285FD;
   color: white;
+}
+/* jumbotron */
+jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.card{
+  max-height: 100%;
+  margin-top: 20px;
+  padding: 0 20px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: white;
+}
+
+small{
+  font-size: 12px;
+  font-weight: bold;
+}
+small a{
+  text-decoration: underline;
+}
+
+.icon_google{
+  margin-right: 1rem;
 }
