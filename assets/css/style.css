@@ -1,4 +1,5 @@
 body{
+  font-family: 'Roboto', sans-serif;
   padding-top: 50px;
 }
 
@@ -31,11 +32,23 @@ body{
 .text_white{
   color: white;
 }
-.text_custumerd{
+.text_grey{
+  color: #7D88A1;
+}
+.text_deploy_h2{
+  color: #031C4E;
+}
+.text_deploy_p{
+  color: #5C6A88;
+}
+.text_service{
   color: #B1BCE1;
 }
 
 /* utility */
+.pt_20{
+  margin-top: 20px;
+}
 .py_10{
   padding: 10px 0;
 }
@@ -106,6 +119,11 @@ small a{
 *   MAIN
 **********/
 .site_section{
-  height: 600px;
+  /* height: 600px; */
   border: 1px solid black;
+}
+
+/* #partners */
+#partners a{
+  color: #0E72FF;
 }
