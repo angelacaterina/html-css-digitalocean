@@ -2,9 +2,18 @@ body{
   font-family: 'Roboto', sans-serif;
   padding-top: 50px;
 }
+/* .debug [class*="col-"]{
+  height: 200px;
+  background: #FFC0CB;
+  border: 1px solid red;
+} */
 
 #site_footer{
   height: 500px;
+}
+
+p{
+  font-weight: 400;
 }
 
 /* background/ color text*/
@@ -40,13 +49,14 @@ body{
 }
 .text_deploy_p{
   color: #5C6A88;
+  font-size: 16px;
 }
 .text_service{
   color: #B1BCE1;
 }
 
 /* utility */
-.pt_20{
+.mt_20{
   margin-top: 20px;
 }
 .py_10{
@@ -92,9 +102,8 @@ body{
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
-  font-weight: 200;
 }
-.card{
+.jumbotron .card{
   max-height: 100%;
   margin-top: 20px;
   padding: 0 20px;
@@ -126,4 +135,30 @@ small a{
 /* #partners */
 #partners a{
   color: #0E72FF;
+}
+/* deploy */
+.list-group-item:first-child,
+.list-group-item:last-child {
+  border-radius: 0;
+}
+.list-group-item {
+  color: #75809A;
+  background-color: #fff;
+  border: none;
+  border-left: 2px solid #D0D0D0;
+  cursor: pointer;
+}
+
+#deploy .card{
+  max-width: 100%;
+  max-height: 100%;
+}
+#deploy .card img{
+  height: 30px;
+}
+#deploy .card h4{
+  color: #31446C;
+}
+#deploy .card p{
+  color: #7A869E;
 }
