@@ -1,12 +1,26 @@
 body{
   padding-top: 50px;
 }
+
+#site_footer{
+  height: 500px;
+}
+
 /* background/ color text*/
 .bg_nav{
   background: white;
 }
 .bg_jumbotron{
   background-color: #2285FD;
+}
+.bg_grey{
+  background-color: #f3f5f9;
+}
+.bg_blue{
+  background-color: #001E99;
+}
+.bg_footer{
+  background-color: #031C4E;
 }
 .text_blue{
   color: #041D4F;
@@ -17,14 +31,24 @@ body{
 .text_white{
   color: white;
 }
+.text_custumerd{
+  color: #B1BCE1;
+}
 
 /* utility */
+.py_10{
+  padding: 10px 0;
+}
 .py_20{
   padding: 20px 0;
+}
+.py_40{
+  padding: 40px 0;
 }
 .pr_70p{
   padding-right: 70px;
 }
+
 /**********
 *  HEADER
 ***********/
@@ -49,7 +73,10 @@ body{
   color: white;
 }
 /* jumbotron */
-jumbotron p {
+.jumbotron{
+  margin-bottom: 0;
+}
+.jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
@@ -73,4 +100,12 @@ small a{
 
 .icon_google{
   margin-right: 1rem;
+}
+
+/**********
+*   MAIN
+**********/
+.site_section{
+  height: 600px;
+  border: 1px solid black;
 }
