@@ -4,7 +4,7 @@ body{
 }
 
 /* TYPOGRAPHY */
-h2, h3, h4, h5, h6{
+h2, h3, h4{
   color: #031b4e;
 }
 h2{
@@ -68,7 +68,7 @@ p{
   background-repeat: no-repeat;
 }
 .bg_footer{
-  background-color: #031C4E;
+  background-color: #020e28;
 }
 
 /* COLOR TEXT */
@@ -101,6 +101,9 @@ p{
 .mt_20{
   margin-top: 20px;
 }
+.mb_20{
+  margin-bottom: 20px;
+}
 .p_1{
   padding: 1rem;
 }
@@ -121,8 +124,8 @@ p{
 *  HEADER
 ***********/
 /* navbar */
-.navbar-brand > img{
-  height: 20px;
+.navbar-brand .logo{
+  color: #0080ff;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -278,6 +281,30 @@ p{
 /************
 * FOOTER
 *************/
+#site_footer .logo {
+  color: #0080ff;
+  margin-bottom: 10px;
+}
+#site_footer li a {
+  color: rgba(255,255,255,0.7);
+  line-height: 2;
+}
+#site_footer li a:hover {
+  color: rgba(255,255,255);
+  text-decoration: none;
+}
+#site_footer p{
+  color: rgba(255,255,255,0.7);
+}
+#site_footer a > i{
+  font-size: 18px;
+}
+
+
+
+
+
+
 
 /************
 * MEDIA QUER
