@@ -61,6 +61,9 @@ p{
 .mt_20{
   margin-top: 20px;
 }
+.p_1{
+  padding: 1rem;
+}
 .py_10{
   padding: 10px 0;
 }
@@ -204,6 +207,14 @@ small a{
   color: #006AFF;
 }
 
+/* features */
+#features a {
+  color: #0069ff;
+}
+#features a:hover{
+  color: #1633ff;
+  text-decoration: none;
+}
 /************
 * MEDIA QUER
 ************/
