@@ -12,6 +12,12 @@ body{
   height: 500px;
 }
 
+#features i,
+#service_data i,
+#development_teams i{
+  padding: 0 1rem;
+}
+
 p{
   font-weight: 400;
 }
@@ -180,18 +186,19 @@ p{
 }
 
 /* designed_developers */
-.card_image{
-  width: 100%;
-  margin: 40px 0 20px;
-}
-.card_image img{
+.box{
   width: 100%;
   height: auto;
+  margin: 40px 0 20px;
+}
+.card_image{
+  width: 100%;
 }
 .card_items{
-  height: 487px;
-  margin: 40px 0 20px;
+  width: 100%;
+  height: 360px;
   position: relative;
+  display: inline-block;
 }
 .angle_divisor{
   position: absolute;
@@ -215,11 +222,13 @@ p{
 }
 
 /* features */
-#features a {
+#features a,
+#development_teams a{
   color: #0069ff;
 }
 #features a:hover,
-#service_data a:hover{
+#service_data a:hover,
+#development_teams a:hover{
   color: #1633ff;
   text-decoration: none;
 }
@@ -238,8 +247,21 @@ p{
 #service_data a{
   color: #00A7C4;
 }
-
-
+/* development_teams */
+.color_p_text{
+  color: #5C6A88;
+  font-size: 20px;
+}
+#development_teams .card_text{
+  width: 100%;
+  height: 345px;
+  background-color: white;
+}
+#development_teams .card_items{
+  width: 100%;
+  height: 345px;
+  position: relative;
+}
 
 
 
@@ -247,7 +269,6 @@ p{
 * MEDIA QUER
 ************/
 @media screen and (max-width:767.5px){
-
   .pb_2{
     margin-bottom: 2rem;
   }
@@ -257,7 +278,6 @@ p{
   .card_items{
     display: none;
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -283,7 +303,7 @@ p{
 
   /* designed */
   .card_items{
-    height: 300px;
+    height: 306px;
   }
 }
 
@@ -293,10 +313,7 @@ p{
   }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
-
   #deploy .card{
     min-height: 160px;
   }
