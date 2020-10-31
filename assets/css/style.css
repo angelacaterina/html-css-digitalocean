@@ -2,14 +2,27 @@ body{
   font-family: 'Roboto', sans-serif;
   padding-top: 50px;
 }
-/* .debug [class*="col-"]{
-  height: 200px;
-  background: #FFC0CB;
-  border: 1px solid red;
-} */
 
-#site_footer{
-  height: 500px;
+/* TYPOGRAPHY */
+h2, h3, h4, h5, h6{
+  color: #031b4e;
+}
+h2{
+  font-size: 36px;
+}
+p{
+  color: #5b6987;
+  font-weight: 400 !important;
+}
+
+.jumbotron a,
+#main_content a {
+  color: #0069ff;
+}
+.jumbotron a:hover,
+#main_content a:hover{
+  color: #1633ff;
+  text-decoration: none;
 }
 
 #features i,
@@ -18,11 +31,23 @@ body{
   padding: 0 1rem;
 }
 
-p{
-  font-weight: 400;
+/* BUTTONS */
+.btn_blu{
+  font-size: 16px;
+  color: white;
+  background-color: #2285FD;
+  border: 1px solid #2285FD;
+}
+.btn_blu:hover{
+  color: white;
+  background-color: rgb(22, 51, 255);
+  border: 1px solid rgb(22, 51, 255);
+}
+.btn_white{
+  font-size:16px;
 }
 
-/* background/ color text*/
+/* BACKGOUND*/
 .bg_nav{
   background: white;
 }
@@ -45,32 +70,34 @@ p{
 .bg_footer{
   background-color: #031C4E;
 }
-.text_blue{
-  color: #041D4F;
+
+/* COLOR TEXT */
+.text_title_p{
+  font-size: 20px;
+  max-width: 80%;
+  margin: auto;
 }
-.text_lightblue{
+.text_p{
+  font-size: 20px;
+}
+
+.text_darkblue{
+  color: #031b4f;
+}
+.text_blue{
   color: #2285FD;
 }
 .text_white{
   color: white;
 }
 .text_grey{
-  color: #7D88A1;
-}
-.text_title_h2{
-  color: #031C4E;
-}
-.text_title_p{
-  color: #5C6A88;
-  font-size: 16px;
-  max-width: 80%;
-  margin: auto;
+  color: #5b6987;
 }
 .text_service{
   color: #B1BCE1;
 }
 
-/* utility */
+/* UTILITY */
 .mt_20{
   margin-top: 20px;
 }
@@ -86,7 +113,7 @@ p{
 .py_50{
   padding: 50px 0;
 }
-.pr_70p{
+.pr_70{
   padding-right: 70px;
 }
 
@@ -99,7 +126,7 @@ p{
 }
 
 .navbar-default .navbar-nav > li > a{
-  color: #041D4F;
+  color: #031b4f;
 }
 .navbar-default .navbar-nav > li > a:hover{
   color: #2285FD;
@@ -113,13 +140,15 @@ p{
   background-color: #2285FD;
   color: white;
 }
-/* jumbotron */
+
+/* .jumbotron */
 .jumbotron{
   margin-bottom: 0;
 }
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
+  font-weight: 300!important;
 }
 .jumbotron .card{
   max-height: 100%;
@@ -129,7 +158,6 @@ p{
   border-radius: 6px;
   background-color: white;
 }
-
 .jumbotron small{
   font-size: 12px;
   font-weight: bold;
@@ -146,8 +174,7 @@ p{
 *   MAIN
 **********/
 .site_section{
-  /* height: 600px; */
-  border: 1px solid black;
+  padding: 50px 0;
 }
 
 /* #partners */
@@ -155,11 +182,7 @@ p{
   max-height: 77px;
 }
 
-#partners a{
-  color: #0E72FF;
-}
-
-/* deploy */
+/* #deploy */
 .list-group-item:first-child,
 .list-group-item:last-child {
   border-radius: 0;
@@ -178,14 +201,8 @@ p{
 #deploy .card img{
   height: 30px;
 }
-#deploy .card h4{
-  color: #31446C;
-}
-#deploy .card p{
-  color: #7A869E;
-}
 
-/* designed_developers */
+/* #designed_developers */
 .box{
   width: 100%;
   height: auto;
@@ -211,47 +228,31 @@ p{
 .angle_divisor.left_color{
   color: #6F7B97;
 }
-.color_text_p{
-  color: #122958;
+.angle_divisor:hover{
+  color:  #031C4E;
 }
+
 .icons > a > i{
-  color: #217EFE;
-}
-.icons:first-child a{
-  color: #006AFF;
+  padding: 0!important;
 }
 
-/* features */
-#features a,
-#development_teams a{
-  color: #0069ff;
-}
-#features a:hover,
-#service_data a:hover,
-#development_teams a:hover{
-  color: #1633ff;
-  text-decoration: none;
-}
-
-/* service_data */
-.border_b{
-  border-bottom: 1px solid white;
-}
+/* #service_data */
 #service_data .row .row{
   margin-left: 0;
   margin-right: 0;
+  padding: 10px 0;
+}
+#service_data .row .row:not(:last-child){
+  border-bottom: 1px solid white;
 }
 #service_data .col-xs-4 {
   text-align: right;
 }
 #service_data a{
-  color: #00A7C4;
+  color: rgb(0, 215, 210);
 }
-/* development_teams */
-.color_p_text{
-  color: #5C6A88;
-  font-size: 20px;
-}
+
+/* #development_teams */
 #development_teams .card_text{
   width: 100%;
   height: 345px;
@@ -263,25 +264,48 @@ p{
   position: relative;
 }
 
+/* #create_account */
+.btn_account{
+  font-size: 16px;
+  color: #0069ff;
+  margin-top: 20px;
+}
+.btn_account:hover{
+  color: #0069ff;
+  background: rgba(225,225,225,0.9);
+}
 
 
 /************
 * MEDIA QUER
 ************/
 @media screen and (max-width:767.5px){
+  /* UTILITY */
   .pb_2{
     margin-bottom: 2rem;
   }
   .pt_2{
     margin-top: 2rem;
   }
+  /* HEADER */
+  /* .jumbotron */
+  .jumbotron h1{
+    font-size: 40px;
+  }
+  .jumbotron p {
+    font-size: 16px;
+  }
+
+  /* MAIN */
+  /* #designed_developers & #development_teams */
   .card_items{
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* navigation */
+  /* HEADER */
+  /* navbar */
   .navbar-toggle {
     display: block;
     float: right;
@@ -289,31 +313,39 @@ p{
   .navbar-left, .navbar-right {
     display: none;
   }
-  /* jumbotron */
-  .jumbotron h1{
-    font-size: 44px;
-  }
-  .jumbotron p {
-    font-size: 18px;
-  }
-  /* partners */
+
+  /* MAIN */
+  /* #partners */
   #partners img{
     max-height: 60px;
   }
 
-  /* designed */
+  /* #designed_developers*/
   .card_items{
     height: 306px;
   }
 }
 
 @media screen and (min-width:992px) and (max-width: 1199px) {
+  /* MAIN */
+  /* #designed_developers*/
   .card_items{
     height: 400px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* HEADER */
+  /* .jumbotron */
+  .jumbotron h1{
+    font-size: 50px;
+  }
+  .jumbotron p {
+    font-size: 18px;
+  }
+  
+  /* MAIN */
+  /* #deploy */
   #deploy .card{
     min-height: 160px;
   }
