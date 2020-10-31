@@ -26,8 +26,15 @@ p{
 .bg_grey{
   background-color: #f3f5f9;
 }
-.bg_blue{
-  background-color: #001E99;
+.bg_service_data{
+  background: rgb(0,30,154);
+  background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,72,198,1) 100%);
+  background-repeat: no-repeat;
+}
+.bg_account{
+  background: rgb(0,30,150);
+  background: linear-gradient(0deg, rgba(0,30,150,1) 0%, rgba(0,66,188,1) 100%);
+  background-repeat: no-repeat;
 }
 .bg_footer{
   background-color: #031C4E;
@@ -117,11 +124,11 @@ p{
   background-color: white;
 }
 
-small{
+.jumbotron small{
   font-size: 12px;
   font-weight: bold;
 }
-small a{
+.jumbotron small a{
   text-decoration: underline;
 }
 
@@ -211,7 +218,8 @@ small a{
 #features a {
   color: #0069ff;
 }
-#features a:hover{
+#features a:hover,
+#service_data a:hover{
   color: #1633ff;
   text-decoration: none;
 }
@@ -220,15 +228,16 @@ small a{
 .border_b{
   border-bottom: 1px solid white;
 }
-
-#service_data .col-xs-3 {
+#service_data .row .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+#service_data .col-xs-4 {
   text-align: right;
 }
-
-
-
-
-
+#service_data a{
+  color: #00A7C4;
+}
 
 
 
@@ -238,9 +247,17 @@ small a{
 * MEDIA QUER
 ************/
 @media screen and (max-width:767.5px){
+
+  .pb_2{
+    margin-bottom: 2rem;
+  }
+  .pt_2{
+    margin-top: 2rem;
+  }
   .card_items{
     display: none;
   }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
