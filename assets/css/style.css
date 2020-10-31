@@ -44,12 +44,14 @@ p{
 .text_grey{
   color: #7D88A1;
 }
-.text_deploy_h2{
+.text_title_h2{
   color: #031C4E;
 }
-.text_deploy_p{
+.text_title_p{
   color: #5C6A88;
   font-size: 16px;
+  max-width: 80%;
+  margin: auto;
 }
 .text_service{
   color: #B1BCE1;
@@ -65,8 +67,8 @@ p{
 .py_20{
   padding: 20px 0;
 }
-.py_40{
-  padding: 40px 0;
+.py_50{
+  padding: 50px 0;
 }
 .pr_70p{
   padding-right: 70px;
@@ -133,9 +135,14 @@ small a{
 }
 
 /* #partners */
+#partners img{
+  max-height: 77px;
+}
+
 #partners a{
   color: #0E72FF;
 }
+
 /* deploy */
 .list-group-item:first-child,
 .list-group-item:last-child {
@@ -151,7 +158,6 @@ small a{
 
 #deploy .card{
   max-width: 100%;
-  max-height: 100%;
 }
 #deploy .card img{
   height: 30px;
@@ -161,4 +167,90 @@ small a{
 }
 #deploy .card p{
   color: #7A869E;
+}
+
+/* designed */
+.card_image{
+  width: 100%;
+  margin: 40px 0 20px;
+}
+.card_image img{
+  width: 100%;
+  height: auto;
+}
+.card_items{
+  height: 487px;
+  margin: 40px 0 20px;
+  position: relative;
+}
+.angle_divisor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #031C4E;
+  cursor: pointer;
+}
+.angle_divisor.left_color{
+  color: #6F7B97;
+}
+.color_text_p{
+  color: #122958;
+}
+.icons > a > i{
+  color: #217EFE;
+}
+.icons:first-child a{
+  color: #006AFF;
+}
+
+/************
+* MEDIA QUER
+************/
+@media screen and (max-width:767.5px){
+  .card_items{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* navigation */
+  .navbar-toggle {
+    display: block;
+    float: right;
+  }
+  .navbar-left, .navbar-right {
+    display: none;
+  }
+  /* jumbotron */
+  .jumbotron h1{
+    font-size: 44px;
+  }
+  .jumbotron p {
+    font-size: 18px;
+  }
+  /* partners */
+  #partners img{
+    max-height: 60px;
+  }
+
+  /* designed */
+  .card_items{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width: 1199px) {
+  .card_items{
+    height: 400px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+
+  #deploy .card{
+    min-height: 160px;
+  }
 }
