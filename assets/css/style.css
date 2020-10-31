@@ -215,6 +215,25 @@ small a{
   color: #1633ff;
   text-decoration: none;
 }
+
+/* service_data */
+.border_b{
+  border-bottom: 1px solid white;
+}
+
+#service_data .col-xs-3 {
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
 /************
 * MEDIA QUER
 ************/
