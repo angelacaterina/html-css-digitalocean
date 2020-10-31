@@ -275,11 +275,18 @@ p{
   background: rgba(225,225,225,0.9);
 }
 
+/************
+* FOOTER
+*************/
 
 /************
 * MEDIA QUER
 ************/
 @media screen and (max-width:767.5px){
+  .text_title_p{
+    max-width: 90%;
+  }
+
   /* UTILITY */
   .pb_2{
     margin-bottom: 2rem;
@@ -343,7 +350,7 @@ p{
   .jumbotron p {
     font-size: 18px;
   }
-  
+
   /* MAIN */
   /* #deploy */
   #deploy .card{
