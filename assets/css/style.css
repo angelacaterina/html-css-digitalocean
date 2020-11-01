@@ -124,8 +124,8 @@ p{
 *  HEADER
 ***********/
 /* navbar */
-.navbar-brand .logo{
-  color: #0080ff;
+.navbar-brand img{
+  height: 20px;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -168,9 +168,14 @@ p{
 .jumbotron small a{
   text-decoration: underline;
 }
-
+.btn_white{
+  position: relative;
+}
 .icon_google{
-  margin-right: 1rem;
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 11px;
 }
 
 /**********
@@ -300,11 +305,57 @@ p{
   font-size: 18px;
 }
 
+.bot{
+  position: fixed;
+  bottom: 50px;
+  left: 80%;
+}
+.chatbot img{
+  height: 50px;
+  padding: 5px;
+  border: 1px solid #006AFF;
+  border-radius: 6px;
+  background-color: #006AFF;
+}
 
+.badge{
+  background-color: red;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 40px;
+  right: -10px;
+}
 
-
-
-
+.tooltip_container {
+  position: relative;
+  left: 90%;
+  display: inline-block;
+}
+.tooltip_container .tooltip_text {
+  visibility: hidden;
+  width: 290px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+.tooltip_container .tooltip_text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+}
+.tooltip_container:hover .tooltip_text {
+  visibility: visible;
+}
 
 /************
 * MEDIA QUER
@@ -335,6 +386,11 @@ p{
   .card_items{
     display: none;
   }
+
+  /* BOT */
+  .bot{
+    left: 70%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -360,14 +416,6 @@ p{
   }
 }
 
-@media screen and (min-width:992px) and (max-width: 1199px) {
-  /* MAIN */
-  /* #designed_developers*/
-  .card_items{
-    height: 400px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   /* HEADER */
   /* .jumbotron */
@@ -382,5 +430,13 @@ p{
   /* #deploy */
   #deploy .card{
     min-height: 160px;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width: 1199px) {
+  /* MAIN */
+  /* #designed_developers*/
+  .card_items{
+    height: 400px;
   }
 }
