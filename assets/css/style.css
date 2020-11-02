@@ -360,7 +360,7 @@ p{
 /************
 * MEDIA QUER
 ************/
-@media screen and (max-width:767.5px){
+@media screen and (max-width:768px){
   .text_title_p{
     max-width: 90%;
   }
@@ -399,6 +399,8 @@ p{
   .navbar-toggle {
     display: block;
     float: right;
+    position: relative;
+    left: 280%;
   }
   .navbar-left, .navbar-right {
     display: none;
