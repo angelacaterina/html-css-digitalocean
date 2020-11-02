@@ -45,6 +45,7 @@ p{
 }
 .btn_white{
   font-size:16px;
+  position: relative;
 }
 
 /* BACKGOUND*/
@@ -168,9 +169,7 @@ p{
 .jumbotron small a{
   text-decoration: underline;
 }
-.btn_white{
-  position: relative;
-}
+
 .icon_google{
   height: 20px;
   position: absolute;
@@ -346,7 +345,7 @@ p{
 .tooltip_container .tooltip_text::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 100%;
   margin-top: -5px;
   border-width: 5px;
@@ -358,7 +357,7 @@ p{
 }
 
 /************
-* MEDIA QUER
+* MEDIA QUERY
 ************/
 @media screen and (max-width:768px){
   .text_title_p{
